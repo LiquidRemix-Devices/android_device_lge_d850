@@ -17,9 +17,9 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#define BLUETOOTH_QTI_SW TRUE
+#define BTM_DEF_LOCAL_NAME "LG G3"
 
-#define BTM_DEF_LOCAL_NAME "LG G3 D850"
+#define BLUETOOTH_QTI_SW TRUE
 
 // Disables read remote device feature
 #define BTA_SKIP_BLE_READ_REMOTE_FEAT FALSE
@@ -32,5 +32,9 @@
 
 /* Defined if the kernel does not have support for CLOCK_BOOTTIME_ALARM */
 #define KERNEL_MISSING_CLOCK_BOOTTIME_ALARM TRUE
+
+/* Allow car handsfree setup to work (BMW and Mercedes) */
+#define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE
 
 #endif
