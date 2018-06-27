@@ -1,8 +1,8 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from d855 device
-$(call inherit-product, device/lge/d855/device.mk)
+# Inherit from d850 device
+$(call inherit-product, device/lge/d850/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_DEVICE := d850
