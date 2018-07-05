@@ -32,3 +32,7 @@ PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRIVATE_BUILD_DESC="g3_clr_pr-user 6.0 MRA58K 170410206da6d release-keys"
 BUILD_FINGERPRINT="lge/g3_clr_pr/g3:6.0/MRA58K/170410206da6d:user/release-keys"
+
+# Vendor security patch level
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.lineage.build.vendor_security_patch=2017-02-01
